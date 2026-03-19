@@ -1,0 +1,14 @@
+collections:
+
+  Recently Added In Animations - TV Shows:    
+    smart_filter:
+      sort_by: random
+      all:
+        episode_added: 30
+      limit: 250
+    summary: New additions to the server includes recently released episodes. Sorted by Date Added.
+    visible_library: true
+    visible_home: true
+    visible_shared: true
+    sort_title: "!0_Recently Added In Animations - TV Shows"
+    file_poster: /config/plexmetamanager/assets/Recently_Added.jpg

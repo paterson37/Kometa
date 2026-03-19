@@ -1,0 +1,15 @@
+collections:  
+  
+  Recently Released In Series - 4K:     # SMART COLLECTION
+    smart_filter:
+      sort_by: episode_added.desc
+      all:
+        added: 92
+        release: 365
+      limit: 250
+    summary: New releases added in the past three months. Sorted by Date Added.
+    visible_library: true
+    visible_home: true
+    visible_shared: true
+    sort_title: "!0_Recently Released In Series - 4K"
+    file_poster: /config/plexmetamanager/assets/Recently_Released.jpg

@@ -1,0 +1,63 @@
+collections:
+  Halloween Episodes In Series 4K:
+    trakt_list:
+      - https://trakt.tv/users/candroid/lists/halloween-tv
+      - https://trakt.tv/users/bunsduo/lists/halloween-tv
+      - https://trakt.tv/users/toasterfaerie/lists/halloween
+      - https://trakt.tv/users/ashleyangel/lists/halloween-episodes
+      - https://trakt.tv/users/jim222001/lists/the-best-movies-and-shows-for-halloween
+      - https://trakt.tv/users/blakemp/lists/halloween
+      - https://trakt.tv/users/abbelea/lists/tv-movies-this-is-halloween-halloween-halloween
+    builder_level: episode
+    sort_title: "!00_Halloween Episodes In Series 4K"
+    collection_order: random
+    sync_mode: sync
+    summary: "A collection of Halloween episodes that may relate to the season."
+    schedule: range(10/01-10/31)
+    visible_home: range(10/01-10/31)
+    visible_shared: range(10/01-10/31)
+    visible_library: range(10/01-10/31)
+    delete_not_scheduled: true
+    url_poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/refs/heads/master/seasonal/halloween.jpg
+    limit: 250
+      
+  Thanksgiving Episodes In Series 4K:
+    trakt_list:
+      - https://trakt.tv/users/toasterfaerie/lists/thanksgiving
+      - https://trakt.tv/users/rjay2690/lists/thanksgiving-episodes
+      - https://trakt.tv/users/andrewbloom/lists/thanksgiving-movies-and-episodes-we-like
+    builder_level: episode
+    sort_title: "!00_Thanksgiving Episodes In Series 4K"
+    collection_order: random
+    sync_mode: sync
+    summary: "A collection of Thanksgiving episodes that may relate to the season."
+    schedule: range(11/01-11/30)
+    visible_home: range(11/01-11/30)
+    visible_shared: range(11/01-11/30)
+    visible_library: range(11/01-11/30)
+    delete_not_scheduled: true
+    url_poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/refs/heads/master/seasonal/thanksgiving.jpg
+    limit: 250
+
+  Christmas Episodes In Series 4K:
+    trakt_list: 
+      - https://trakt.tv/users/candroid/lists/christmas-tv
+      - https://trakt.tv/users/bunsduo/lists/christmas-tv
+      - https://trakt.tv/users/toasterfaerie/lists/christmas-tv-specials
+      - https://trakt.tv/users/arthirak/lists/christmas-specials
+      - https://trakt.tv/users/somedude69/lists/wikipedia-christmas-episodes-crime-drama-mystery
+      - https://trakt.tv/users/somedude69/lists/wikipedia-christmas-episodes-medical-drama
+      - https://trakt.tv/users/somedude69/lists/wikipedia-christmas-episodes-supernatural-sci-fi-fantasy-horror
+      - https://trakt.tv/users/somedude69/lists/wikipedia-christmas-episodes-sitcoms
+    builder_level: episode
+    sort_title: "!00_Christmas Episodes In Series 4K"
+    collection_order: random
+    sync_mode: sync
+    summary: "A collection of Christmas episodes that may relate to the season."
+    schedule: range(12/01-12/31)
+    visible_home: range(12/01-12/31)
+    visible_shared: range(12/01-12/31)
+    visible_library: range(12/01-12/31)
+    delete_not_scheduled: true
+    url_poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/refs/heads/master/seasonal/christmas.jpg
+    limit: 250

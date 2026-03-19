@@ -1,0 +1,5 @@
+collections:
+  4KDV-edition:
+    plex_all: true
+    item_edition: 4K DV
+    build_collection: false

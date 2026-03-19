@@ -1,0 +1,14 @@
+collections:
+
+  Recently Added In Movies - 4K Remux: # SMART COLLECTION
+    smart_filter:
+      sort_by: added.desc
+      all:
+        added: 30
+      limit: 250
+    summary: New additions to the server includes recently released movies. Sorted by Date Added.
+    visible_library: true
+    visible_home: true
+    visible_shared: true
+    sort_title: "!0_Recently Added In Movies - 4K Remux"
+    file_poster: /config/plexmetamanager/assets/Recently_Added.jpg
