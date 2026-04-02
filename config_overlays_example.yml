@@ -1,0 +1,677 @@
+libraries:
+  Movies:
+    report_path: /home/Kometa/config/reports/Movies.yml
+    remove_overlays: false
+    template_variables:
+      sep_style: gray
+      placeholder_imdb_id: tt8579674
+    overlay_files:
+    - default: runtimes
+      template_variables:
+        horizontal_align: center
+        vertical_align: bottom
+        text: ''
+        back_width: 205
+    # Creates a ribbon style background in the top left corner with a width of 313 pixels. Keep in mind, it has to be run before any overlay which is supposed to be on top of the background
+    - url: https://raw.githubusercontent.com/s0len/meta-manager-config/main/overlays/background_top_left_313_wide.yml
+    # Resolution in the upper left corner in 45 degree format
+    - default: resolution
+      template_variables:
+        use_2160p: false
+        url: https://raw.githubusercontent.com/s0len/meta-manager-config/main/overlays/resolution-top-left-45deg/<<overlay_name>>.png
+        horizontal_align: left
+        horizontal_offset: 0
+        vertical_offset: 0
+        vertical_align: top
+        final_horizontal_offset: 0
+        final_vertical_offset: 0
+        back_width: 1000
+        back_height: 1500
+        back_color: 00
+    # Audio in the upper left corner in 45 degree format
+    - default: audio_codec
+      template_variables:
+        url: https://raw.githubusercontent.com/s0len/meta-manager-config/main/overlays/audio-top-left-45deg/<<key>>.png
+        horizontal_align: left
+        horizontal_offset: 0
+        vertical_offset: 0
+        vertical_align: top
+        back_width: 1000
+        back_height: 1500
+        back_color: 00
+    - default: mediastinger
+    - default: commonsense
+      template_variables:
+        horizontal_align: left
+        vertical_align: bottom
+    - file: /home/Kometa/config/overlays_movies.yml
+    settings:
+      asset_directory: /home/Kometa/config/assets/Movies
+      prioritize_assets: true
+    operations:
+      plex_bulk_edit_batch_size: 2000
+      mass_content_rating_update: mdb_commonsense
+      assets_for_all: true
+  Movies - 4K:
+    report_path: /home/Kometa/config/reports/Movies - 4K.yml
+    remove_overlays: false
+    template_variables:
+      sep_style: gray
+      placeholder_imdb_id: tt8579674
+    overlay_files:
+    - default: runtimes
+      template_variables:
+        horizontal_align: center
+        vertical_align: bottom
+        text: ''
+        back_width: 205
+    # Creates a ribbon style background in the top left corner with a width of 313 pixels. Keep in mind, it has to be run before any overlay which is supposed to be on top of the background
+    - url: https://raw.githubusercontent.com/s0len/meta-manager-config/main/overlays/background_top_left_313_wide.yml
+    # Resolution in the upper left corner in 45 degree format
+    - default: resolution
+      template_variables:
+        use_1080p: false
+        use_720p: false
+        use_576p: false
+        use_480p: false
+        url: https://raw.githubusercontent.com/s0len/meta-manager-config/main/overlays/resolution-top-left-45deg/<<overlay_name>>.png
+        horizontal_align: left
+        horizontal_offset: 0
+        vertical_offset: 0
+        vertical_align: top
+        final_horizontal_offset: 0
+        final_vertical_offset: 0
+        back_width: 1000
+        back_height: 1500
+        back_color: 00
+    # Audio in the upper left corner in 45 degree format
+    - default: audio_codec
+      template_variables:
+        url: https://raw.githubusercontent.com/s0len/meta-manager-config/main/overlays/audio-top-left-45deg/<<key>>.png
+        horizontal_align: left
+        horizontal_offset: 0
+        vertical_offset: 0
+        vertical_align: top
+        back_width: 1000
+        back_height: 1500
+        back_color: 00
+    - default: mediastinger
+    - default: commonsense
+      template_variables:
+        horizontal_align: left
+        vertical_align: bottom
+    - file: /home/Kometa/config/overlays_movies.yml
+    settings:
+      asset_directory: /home/Kometa/config/assets/Movies - 4K
+      prioritize_assets: true
+    operations:
+      plex_bulk_edit_batch_size: 500
+      mass_content_rating_update: mdb_commonsense
+      assets_for_all: true
+  Movies - 4K DV:
+    report_path: /home/Kometa/config/reports/Movies - 4K DV.yml
+    remove_overlays: false
+    template_variables:
+      sep_style: gray
+      placeholder_imdb_id: tt8579674
+    overlay_files:
+    - default: runtimes
+      template_variables:
+        horizontal_align: center
+        vertical_align: bottom
+        text: ''
+        back_width: 205
+    # Creates a ribbon style background in the top left corner with a width of 313 pixels. Keep in mind, it has to be run before any overlay which is supposed to be on top of the background
+    - url: https://raw.githubusercontent.com/s0len/meta-manager-config/main/overlays/background_top_left_313_wide.yml
+    # Resolution in the upper left corner in 45 degree format
+    - default: resolution
+      template_variables:
+        use_1080p: false
+        use_720p: false
+        use_576p: false
+        use_480p: false
+        url: https://raw.githubusercontent.com/s0len/meta-manager-config/main/overlays/resolution-top-left-45deg/<<overlay_name>>.png
+        horizontal_align: left
+        horizontal_offset: 0
+        vertical_offset: 0
+        vertical_align: top
+        final_horizontal_offset: 0
+        final_vertical_offset: 0
+        back_width: 1000
+        back_height: 1500
+        back_color: 00
+    # Audio in the upper left corner in 45 degree format
+    - default: audio_codec
+      template_variables:
+        url: https://raw.githubusercontent.com/s0len/meta-manager-config/main/overlays/audio-top-left-45deg/<<key>>.png
+        horizontal_align: left
+        horizontal_offset: 0
+        vertical_offset: 0
+        vertical_align: top
+        back_width: 1000
+        back_height: 1500
+        back_color: 00
+    - default: mediastinger
+    - default: commonsense
+      template_variables:
+        horizontal_align: left
+        vertical_align: bottom
+    - file: /home/Kometa/config/overlays_movies.yml
+    settings:
+      asset_directory: /home/Kometa/config/assets/Movies - 4K DV
+      prioritize_assets: true
+    operations:
+      plex_bulk_edit_batch_size: 500
+      mass_content_rating_update: mdb_commonsense
+      assets_for_all: true
+  Movies - 4K Remux:
+    report_path: /home/Kometa/config/reports/Movies - 4K Remux.yml
+    remove_overlays: false
+    template_variables:
+      sep_style: gray
+      placeholder_imdb_id: tt8579674
+    overlay_files:
+    - default: runtimes
+      template_variables:
+        horizontal_align: center
+        vertical_align: bottom
+        text: ''
+        back_width: 205
+    # Creates a ribbon style background in the top left corner with a width of 313 pixels. Keep in mind, it has to be run before any overlay which is supposed to be on top of the background
+    - url: https://raw.githubusercontent.com/s0len/meta-manager-config/main/overlays/background_top_left_313_wide.yml
+    # Resolution in the upper left corner in 45 degree format
+    - default: resolution
+      template_variables:
+        use_1080p: false
+        use_720p: false
+        use_576p: false
+        use_480p: false
+        url: https://raw.githubusercontent.com/s0len/meta-manager-config/main/overlays/resolution-top-left-45deg/<<overlay_name>>.png
+        horizontal_align: left
+        horizontal_offset: 0
+        vertical_offset: 0
+        vertical_align: top
+        final_horizontal_offset: 0
+        final_vertical_offset: 0
+        back_width: 1000
+        back_height: 1500
+        back_color: 00
+    # Audio in the upper left corner in 45 degree format
+    - default: audio_codec
+      template_variables:
+        url: https://raw.githubusercontent.com/s0len/meta-manager-config/main/overlays/audio-top-left-45deg/<<key>>.png
+        horizontal_align: left
+        horizontal_offset: 0
+        vertical_offset: 0
+        vertical_align: top
+        back_width: 1000
+        back_height: 1500
+        back_color: 00
+    - default: mediastinger
+    - default: commonsense
+      template_variables:
+        horizontal_align: left
+        vertical_align: bottom
+    - file: /home/Kometa/config/overlays_movies.yml
+    settings:
+      asset_directory: /home/Kometa/config/assets/Movies - 4K Remux
+      prioritize_assets: true
+    operations:
+      plex_bulk_edit_batch_size: 500
+      mass_content_rating_update: mdb_commonsense
+      assets_for_all: true
+  Animations - Movies:
+    report_path: /home/Kometa/config/reports/Animations - Movies.yml
+    remove_overlays: false
+    template_variables:
+      sep_style: gray
+      placeholder_imdb_id: tt8579674
+    overlay_files:
+    - default: runtimes
+      template_variables:
+        horizontal_align: center
+        vertical_align: bottom
+        text: ''
+        back_width: 205
+    # Creates a ribbon style background in the top left corner with a width of 313 pixels. Keep in mind, it has to be run before any overlay which is supposed to be on top of the background
+    - url: https://raw.githubusercontent.com/s0len/meta-manager-config/main/overlays/background_top_left_313_wide.yml
+    # Resolution in the upper left corner in 45 degree format
+    - default: resolution
+      template_variables:
+        url: https://raw.githubusercontent.com/s0len/meta-manager-config/main/overlays/resolution-top-left-45deg/<<overlay_name>>.png
+        horizontal_align: left
+        horizontal_offset: 0
+        vertical_offset: 0
+        vertical_align: top
+        final_horizontal_offset: 0
+        final_vertical_offset: 0
+        back_width: 1000
+        back_height: 1500
+        back_color: 00
+    # Audio in the upper left corner in 45 degree format
+    - default: audio_codec
+      template_variables:
+        url: https://raw.githubusercontent.com/s0len/meta-manager-config/main/overlays/audio-top-left-45deg/<<key>>.png
+        horizontal_align: left
+        horizontal_offset: 0
+        vertical_offset: 0
+        vertical_align: top
+        back_width: 1000
+        back_height: 1500
+        back_color: 00
+    - default: mediastinger
+    - default: commonsense
+      template_variables:
+        horizontal_align: left
+        vertical_align: bottom
+    - file: /home/Kometa/config/overlays_movies.yml
+    settings:
+      asset_directory: /home/Kometa/config/assets/Animations - Movies
+      prioritize_assets: true
+    operations:
+      plex_bulk_edit_batch_size: 500
+      mass_content_rating_update: mdb_commonsense
+      assets_for_all: true
+  Series:
+    schedule: weekly(monday|thursday)
+    report_path: /home/Kometa/config/reports/Series.yml
+    remove_overlays: false
+    template_variables:
+      sep_style: gray
+      placeholder_imdb_id: tt1190634
+    overlay_files:
+    # Status in the top left corner
+    - url: https://raw.githubusercontent.com/s0len/meta-manager-config/main/overlays/status.yml
+    # Fallback Network logo which is overwritten by default: network if it finds an image for the network. Must run before default: network.
+    - url: https://raw.githubusercontent.com/s0len/meta-manager-config/main/overlays/network_fallback.yml
+    # Uses the default PMM network but replaces the image with custom ones
+    - default: network
+      template_variables:
+        horizontal_align: left
+        horizontal_offset: 0
+        vertical_offset: 0
+        vertical_align: top
+        back_width: 1000
+        back_height: 1500
+        url: https://raw.githubusercontent.com/s0len/meta-manager-config/main/overlays/network-top-left/<<key>>.png
+        back_color: 00
+    - default: resolution
+      template_variables:
+        use_2160p: false
+        horizontal_align: center
+        vertical_align: bottom
+    - file: /home/Kometa/config/overlays_movies.yml
+    - default: commonsense
+      template_variables:
+        horizontal_align: left
+        vertical_align: bottom
+    settings:
+      asset_directory: /home/Kometa/config/assets/Series
+      prioritize_assets: true
+    operations:
+      plex_bulk_edit_batch_size: 2000
+      mass_content_rating_update: mdb_commonsense
+      assets_for_all: true
+  Series - 4K:
+    schedule: weekly(monday|thursday)
+    report_path: /home/Kometa/config/reports/Series - 4K.yml
+    remove_overlays: false
+    template_variables:
+      sep_style: gray
+      placeholder_imdb_id: tt1190634
+    overlay_files:
+    # Status in the top left corner
+    - url: https://raw.githubusercontent.com/s0len/meta-manager-config/main/overlays/status.yml
+    # Fallback Network logo which is overwritten by default: network if it finds an image for the network. Must run before default: network.
+    - url: https://raw.githubusercontent.com/s0len/meta-manager-config/main/overlays/network_fallback.yml
+    # Uses the default PMM network but replaces the image with custom ones
+    - default: network
+      template_variables:
+        horizontal_align: left
+        horizontal_offset: 0
+        vertical_offset: 0
+        vertical_align: top
+        back_width: 1000
+        back_height: 1500
+        url: https://raw.githubusercontent.com/s0len/meta-manager-config/main/overlays/network-top-left/<<key>>.png
+        back_color: 00
+    - default: resolution
+      template_variables:
+        use_1080p: false
+        use_720p: false
+        use_576p: false
+        use_480p: false
+        horizontal_align: center
+        vertical_align: bottom
+    - file: /home/Kometa/config/overlays_movies.yml
+    - default: commonsense
+      template_variables:
+        horizontal_align: left
+        vertical_align: bottom
+    settings:
+      asset_directory: /home/Kometa/config/assets/Series - 4K
+      prioritize_assets: true
+    operations:
+      plex_bulk_edit_batch_size: 1000
+      mass_content_rating_update: mdb_commonsense
+      assets_for_all: true
+  Series - 4K DV:
+    schedule: weekly(monday|thursday)
+    report_path: /home/Kometa/config/reports/Series - 4K DV.yml
+    remove_overlays: false
+    template_variables:
+      sep_style: gray
+      placeholder_imdb_id: tt1190634
+    overlay_files:
+    # Status in the top left corner
+    - url: https://raw.githubusercontent.com/s0len/meta-manager-config/main/overlays/status.yml
+    # Fallback Network logo which is overwritten by default: network if it finds an image for the network. Must run before default: network.
+    - url: https://raw.githubusercontent.com/s0len/meta-manager-config/main/overlays/network_fallback.yml
+    # Uses the default PMM network but replaces the image with custom ones
+    - default: network
+      template_variables:
+        horizontal_align: left
+        horizontal_offset: 0
+        vertical_offset: 0
+        vertical_align: top
+        back_width: 1000
+        back_height: 1500
+        url: https://raw.githubusercontent.com/s0len/meta-manager-config/main/overlays/network-top-left/<<key>>.png
+        back_color: 00
+    - default: resolution
+      template_variables:
+        use_1080p: false
+        use_720p: false
+        use_576p: false
+        use_480p: false
+        horizontal_align: center
+        vertical_align: bottom
+    - file: /home/Kometa/config/overlays_movies.yml
+    - default: commonsense
+      template_variables:
+        horizontal_align: left
+        vertical_align: bottom
+    settings:
+      asset_directory: /home/Kometa/config/assets/Series - 4K DV
+      prioritize_assets: true
+    operations:
+      plex_bulk_edit_batch_size: 1000
+      mass_content_rating_update: mdb_commonsense
+      assets_for_all: true
+  Animations - TV Shows:
+    schedule: weekly(monday|thursday)
+    report_path:
+    remove_overlays: false
+    template_variables:
+      sep_style: gray
+      placeholder_imdb_id: tt1190634
+    overlay_files:
+    # Status in the top left corner
+    - url: https://raw.githubusercontent.com/s0len/meta-manager-config/main/overlays/status.yml
+    # Fallback Network logo which is overwritten by default: network if it finds an image for the network. Must run before default: network.
+    - url: https://raw.githubusercontent.com/s0len/meta-manager-config/main/overlays/network_fallback.yml
+    # Uses the default PMM network but replaces the image with custom ones
+    - default: network
+      template_variables:
+        horizontal_align: left
+        horizontal_offset: 0
+        vertical_offset: 0
+        vertical_align: top
+        back_width: 1000
+        back_height: 1500
+        url: https://raw.githubusercontent.com/s0len/meta-manager-config/main/overlays/network-top-left/<<key>>.png
+        back_color: 00
+    - default: resolution
+      template_variables:
+        horizontal_align: center
+        vertical_align: bottom
+    - file: /home/Kometa/config/overlays_movies.yml
+    - default: commonsense
+      template_variables:
+        horizontal_align: left
+        vertical_align: bottom
+    settings:
+      asset_directory: /home/Kometa/config/assets/Animations - TV Shows
+      prioritize_assets: true
+    operations:
+      plex_bulk_edit_batch_size: 500
+      mass_content_rating_update: mdb_commonsense
+      assets_for_all: true
+  Anime - Movies:
+    schedule: weekly(tuesday|wednesday|friday|saturday|sunday)
+    remove_overlays: false
+    overlay_files:
+    - default: studio
+      template_variables:
+        horizontal_align: left
+        horizontal_offset: 0
+        vertical_align: top
+        vertical_offset: 0
+        back_width: 1000
+        back_height: 1500
+        url: https://raw.githubusercontent.com/s0len/meta-manager-config/main/overlays/studio-top-left/<<key>>.png
+        back_color: 00
+    - default: commonsense
+      template_variables:
+        horizontal_align: left
+        vertical_align: bottom
+    - default: runtimes
+      template_variables:
+        horizontal_align: center
+        vertical_align: bottom
+        text: ''
+        back_width: 205
+    - file: /home/Kometa/config/overlays_movies.yml
+    settings:
+      asset_directory: /home/Kometa/config/assets/Anime - Movies
+      prioritize_assets: true
+    operations:
+      plex_bulk_edit_batch_size: 100
+      mass_content_rating_update: mdb_commonsense
+      assets_for_all: true
+  Anime:
+    schedule: weekly(monday|thursday)
+    remove_overlays: false
+    overlay_files:
+    # Status in the top left corner
+    - url: https://raw.githubusercontent.com/s0len/meta-manager-config/main/overlays/status.yml
+    # Fallback Network logo which is overwritten by default: network if it finds an image for the network. Must run before default: network.
+    - url: https://raw.githubusercontent.com/s0len/meta-manager-config/main/overlays/network_fallback.yml
+    # Uses the default PMM network but replaces the image with custom ones
+    - default: network
+      template_variables:
+        horizontal_align: left
+        horizontal_offset: 0
+        vertical_offset: 0
+        vertical_align: top
+        back_width: 1000
+        back_height: 1500
+        url: https://raw.githubusercontent.com/s0len/meta-manager-config/main/overlays/network-top-left/<<key>>.png
+        back_color: 00
+    - default: resolution
+      template_variables:
+        horizontal_align: center
+        vertical_align: bottom
+    - file: /home/Kometa/config/overlays_movies.yml
+    - default: commonsense
+      template_variables:
+        horizontal_align: left
+        vertical_align: bottom
+    settings:
+      asset_directory: /home/Kometa/config/assets/Anime
+      prioritize_assets: true
+    operations:
+      plex_bulk_edit_batch_size: 500
+      mass_content_rating_update: mdb_commonsense
+      assets_for_all: true
+  Sports - Series:
+    schedule: weekly(monday|thursday)
+    remove_overlays: false
+    overlay_files:
+    # Status in the top left corner
+    - url: https://raw.githubusercontent.com/s0len/meta-manager-config/main/overlays/status.yml
+    # Fallback Network logo which is overwritten by default: network if it finds an image for the network. Must run before default: network.
+    - url: https://raw.githubusercontent.com/s0len/meta-manager-config/main/overlays/network_fallback.yml
+    # Uses the default PMM network but replaces the image with custom ones
+    - default: network
+      template_variables:
+        horizontal_align: left
+        horizontal_offset: 0
+        vertical_offset: 0
+        vertical_align: top
+        back_width: 1000
+        back_height: 1500
+        url: https://raw.githubusercontent.com/s0len/meta-manager-config/main/overlays/network-top-left/<<key>>.png
+        back_color: 00
+    - default: resolution
+      template_variables:
+        horizontal_align: center
+        vertical_align: bottom
+    - file: /home/Kometa/config/overlays_movies.yml
+    - default: commonsense
+      template_variables:
+        horizontal_align: left
+        vertical_align: bottom
+    settings:
+      asset_directory: /home/Kometa/config/assets/Sports - Series
+      prioritize_assets: true
+    operations:
+      mass_content_rating_update: mdb_commonsense
+      assets_for_all: true
+  Sports - Events:
+    schedule: weekly(monday|tuesday|wednesday)
+    remove_overlays: false
+    overlay_files:
+    - default: runtimes
+      template_variables:
+        horizontal_align: center
+        vertical_align: bottom
+        text: ''
+        back_width: 205
+    # Creates a ribbon style background in the top left corner with a width of 313 pixels. Keep in mind, it has to be run before any overlay which is supposed to be on top of the background
+    - url: https://raw.githubusercontent.com/s0len/meta-manager-config/main/overlays/background_top_left_313_wide.yml
+    # Resolution in the upper left corner in 45 degree format
+    - default: resolution
+      template_variables:
+        url: https://raw.githubusercontent.com/s0len/meta-manager-config/main/overlays/resolution-top-left-45deg/<<overlay_name>>.png
+        horizontal_align: left
+        horizontal_offset: 0
+        vertical_offset: 0
+        vertical_align: top
+        final_horizontal_offset: 0
+        final_vertical_offset: 0
+        back_width: 1000
+        back_height: 1500
+        back_color: 00
+    # Audio in the upper left corner in 45 degree format
+    - default: audio_codec
+      template_variables:
+        url: https://raw.githubusercontent.com/s0len/meta-manager-config/main/overlays/audio-top-left-45deg/<<key>>.png
+        horizontal_align: left
+        horizontal_offset: 0
+        vertical_offset: 0
+        vertical_align: top
+        back_width: 1000
+        back_height: 1500
+        back_color: 00
+    - default: mediastinger
+    - default: commonsense
+      template_variables:
+        horizontal_align: left
+        vertical_align: bottom
+    - file: /home/Kometa/config/overlays_movies.yml
+    settings:
+      asset_directory: /home/Kometa/config/assets/Sports - Events
+      prioritize_assets: true
+    operations:
+      mass_content_rating_update: mdb_commonsense
+      assets_for_all: true
+settings:
+  cache: true
+  cache_expiration: 60
+  asset_folders: true
+  asset_depth: 2
+  create_asset_folders: true
+  prioritize_assets: false
+  dimensional_asset_rename: false
+  download_url_assets: false
+  show_missing_season_assets: false
+  show_missing_episode_assets: false
+  show_asset_not_needed: true
+  sync_mode: append
+  minimum_items: 1
+  default_collection_order:
+  delete_below_minimum: true
+  delete_not_scheduled: false
+  run_again_delay: 2
+  missing_only_released: false
+  only_filter_missing: false
+  show_unmanaged: true
+  show_unconfigured: true
+  show_filtered: false
+  show_options: true
+  show_missing: true
+  show_missing_assets: true
+  save_report: false
+  tvdb_language: eng
+  ignore_ids:
+  ignore_imdb_ids:
+  item_refresh_delay: 0
+  playlist_sync_to_user: all
+  playlist_exclude_users:
+  playlist_report: false
+  verify_ssl: true
+  custom_repo:
+  check_nightly: false
+  run_order:
+  - operations
+  - metadata
+  - collections
+  - overlays
+  asset_directory:
+  overlay_artwork_filetype: jpg
+  overlay_artwork_quality: 90
+  show_unfiltered: false
+webhooks:                                           # Can be individually specified per library as well
+  error: [REDACTED]
+  run_start: [REDACTED]
+  run_end: [REDACTED]
+  changes: [REDACTED]
+  version: [REDACTED]
+  delete: [REDACTED]
+plex:                                               # Can be individually specified per library as well; REQUIRED for the script to run
+  url: [REDACTED]
+  token: [REDACTED]
+  timeout: 360
+  clean_bundles: true
+  empty_trash: true
+  optimize: false
+  db_cache: 4048                                    # 2048 MB is 2GB which is what I use. Adjust for your system as 2048 MB (2 GB) is probably a good starting point compared to the default Plex value of 40 MB
+  verify_ssl:
+tmdb:                                               # REQUIRED for the script to run
+  apikey: [REDACTED]
+  language: en
+  region: GB                                        # Upper case ISO 3166-1 Code 
+  cache_expiration: 60
+omdb:
+  apikey: [REDACTED]
+  cache_expiration: 60
+mdblist:
+  apikey: [REDACTED]
+  cache_expiration: 60
+
+mal:
+  client_id: [REDACTED]
+  client_secret: [REDACTED]
+  authorization:
+    access_token: [REDACTED]
+    token_type: Bearer
+    expires_in: 2678400
+    refresh_token: d[REDACTED]
+  localhost_url: [REDACTED]
+  cache_expiration: 60
+tautulli:
+  url: [REDACTED]
+  apikey: [REDACTED]
+github:
+  token: [REDACTED]
