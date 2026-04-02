@@ -1,0 +1,685 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/Kometa-Team/Kometa/nightly/json-schema/config-schema.json
+
+libraries:
+  Movies:
+    report_path: /config/plexmetamanager/reports/Movies.yml
+    remove_overlays: false
+    template_variables:
+      sep_style: gray
+      placeholder_imdb_id: tt8579674
+    collection_files:
+    - default: separator_award
+      schedule: weekly(sunday|thursday)
+    - default: oscars
+      schedule: weekly(sunday|thursday)
+    - default: sundance
+      schedule: weekly(sunday|thursday)
+    - default: separator_chart
+      schedule: weekly(sunday|thursday)
+    - default: letterboxd
+      schedule: weekly(sunday|thursday)
+      template_variables:
+        cache_builders: 7
+        cache_builders_1001_movies: 30
+        cache_builders_edgarwright: 30
+    - default: trakt
+      schedule: weekly(sunday|thursday)
+    - default: universe
+      schedule: weekly(sunday|thursday)
+    - default: franchise
+      schedule: weekly(sunday|thursday)
+      template_variables:
+        collection_section: '200'
+    - file: /config/plexmetamanager/separator_franchise.yml
+      schedule: weekly(sunday|thursday)
+      template_variables:
+        collection_section: '175'
+    - default: streaming
+      schedule: weekly(sunday|thursday)
+      template_variables:
+        originals_only: true
+    - default: actor
+      schedule: weekly(sunday|thursday)
+      template_variables:
+        data:
+          depth: 1
+          limit: 50
+        style: diiivoycolor
+    - default: director
+      schedule: weekly(sunday|thursday)
+      template_variables:
+        data:
+          depth: 1
+          limit: 25
+        style: diiivoycolor
+    - default: director
+      schedule: weekly(sunday|thursday)
+      template_variables:
+        include: David Lynch
+        data:
+          depth: 1
+          limit: 25
+        style: diiivoycolor
+    - default: seasonal
+      schedule:
+      - weekly(sunday|thursday)
+      - monthly(1)
+      template_variables:
+        sort_by: audience_rating.desc
+        name_format: <<key_name>> <<library_translationU>>s In Movies
+        visible_home: true
+        visible_shared: true
+        visible_library: true
+    - default: decade
+      schedule: weekly(sunday|thursday)
+    - default: imdb
+      schedule: weekly(sunday|thursday)
+    - file: /config/plexmetamanager/Recently_Released/Recently Released Movies.yml
+    - file: /config/plexmetamanager/Recently_Added/Recently Added Movies.yml
+    - file: /config/plexmetamanager/Seasonal/Hallmark Christmas Movies.yml
+      schedule:
+        - weekly(sunday|thursday)
+        - monthly(1)
+      asset_directory: /config/plexmetamanager/assets
+    operations:
+      mass_user_rating_update: reset
+  Movies - 4K:
+    report_path: /config/plexmetamanager/reports/Movies - 4K.yml
+    remove_overlays: false
+    template_variables:
+      sep_style: gray
+      placeholder_imdb_id: tt8579674
+    collection_files:
+    - default: separator_award
+      schedule: weekly(sunday|thursday)
+    - default: oscars
+      schedule: weekly(sunday|thursday)
+    - default: sundance
+      schedule: weekly(sunday|thursday)
+    - default: separator_chart
+      schedule: weekly(sunday|thursday)
+    - default: letterboxd
+      schedule: weekly(sunday|thursday)
+      template_variables:
+        cache_builders: 7
+        cache_builders_1001_movies: 30
+        cache_builders_edgarwright: 30
+    - default: trakt
+      schedule: weekly(sunday|thursday)
+    - default: universe
+      schedule: weekly(sunday|thursday)
+    - default: franchise
+      schedule: weekly(sunday|thursday)
+      template_variables:
+        collection_section: '200'
+    - file: /config/plexmetamanager/separator_franchise.yml
+      schedule: weekly(sunday|thursday)
+      template_variables:
+        collection_section: '175'
+    - default: streaming
+      schedule: weekly(sunday|thursday)
+      template_variables:
+        originals_only: true
+    - default: actor
+      schedule: weekly(sunday|thursday)
+      template_variables:
+        data:
+          depth: 1
+          limit: 50
+        style: diiivoycolor
+    - default: director
+      schedule: weekly(sunday|thursday)
+      template_variables:
+        data:
+          depth: 1
+          limit: 25
+        style: diiivoycolor
+    - default: director
+      schedule: weekly(sunday|thursday)
+      template_variables:
+        include: David Lynch
+        data:
+          depth: 1
+          limit: 25
+        style: diiivoycolor
+    - default: seasonal
+      schedule:
+      - weekly(sunday|thursday)
+      - monthly(1)
+      template_variables:
+        sort_by: audience_rating.desc
+        name_format: <<key_name>> <<library_translationU>>s In Movies - 4K
+        visible_home: true
+        visible_shared: true
+        visible_library: true
+    - default: decade
+      schedule: weekly(sunday|thursday)
+    - default: imdb
+      schedule: weekly(sunday|thursday)
+    - file: /config/plexmetamanager/Recently_Released/Recently Released Movies 4K.yml
+    - file: /config/plexmetamanager/Recently_Added/Recently Added Movies 4K.yml
+    - file: /config/plexmetamanager//Editions/4K Edition.yml
+      asset_directory: /config/plexmetamanager/assets
+    operations:
+      mass_user_rating_update: reset
+  Movies - 4K DV:
+    report_path: /config/plexmetamanager/reports/Movies - 4K DV.yml
+    remove_overlays: false
+    template_variables:
+      sep_style: gray
+      placeholder_imdb_id: tt8579674
+    collection_files:
+    - default: separator_award
+      schedule: weekly(sunday|thursday)
+    - default: oscars
+      schedule: weekly(sunday|thursday)
+    - default: sundance
+      schedule: weekly(sunday|thursday)
+    - default: separator_chart
+      schedule: weekly(sunday|thursday)
+    - default: letterboxd
+      schedule: weekly(sunday|thursday)
+      template_variables:
+        cache_builders: 7
+        cache_builders_1001_movies: 30
+        cache_builders_edgarwright: 30
+    - default: trakt
+      schedule: weekly(sunday|thursday)
+    - default: universe
+      schedule: weekly(sunday|thursday)
+    - default: franchise
+      schedule: weekly(sunday|thursday)
+      template_variables:
+        collection_section: '200'
+    - file: /config/plexmetamanager/separator_franchise.yml
+      schedule: weekly(sunday|thursday)
+      template_variables:
+        collection_section: '175'
+    - default: streaming
+      schedule: weekly(sunday|thursday)
+      template_variables:
+        originals_only: true
+    - default: actor
+      schedule: weekly(sunday|thursday)
+      template_variables:
+        data:
+          depth: 1
+          limit: 50
+        style: diiivoycolor
+    - default: director
+      schedule: weekly(sunday|thursday)
+      template_variables:
+        data:
+          depth: 1
+          limit: 25
+        style: diiivoycolor
+    - default: director
+      schedule: weekly(sunday|thursday)
+      template_variables:
+        include: David Lynch
+        data:
+          depth: 1
+          limit: 25
+        style: diiivoycolor
+    - default: seasonal
+      schedule:
+      - weekly(sunday|thursday)
+      - monthly(1)
+      template_variables:
+        sort_by: audience_rating.desc
+        name_format: <<key_name>> <<library_translationU>>s In Movies - 4K DV
+        visible_home: true
+        visible_shared: true
+        visible_library: true
+    - default: decade
+      schedule: weekly(sunday|thursday)
+    - default: imdb
+      schedule: weekly(sunday|thursday)
+    - file: /config/plexmetamanager/Recently_Released/Recently Released Movies 4K DV.yml
+    - file: /config/plexmetamanager/Recently_Added/Recently Added Movies 4K DV.yml
+    - file: /config/plexmetamanager/Editions/4K DV Edition.yml
+      asset_directory: /config/plexmetamanager/assets
+    operations:
+      mass_user_rating_update: reset
+  Movies - 4K Remux:
+    report_path: /config/plexmetamanager/reports/Movies - 4K Remux.yml
+    remove_overlays: false
+    template_variables:
+      sep_style: gray
+      placeholder_imdb_id: tt8579674
+    collection_files:
+    - default: separator_award
+      schedule: weekly(sunday|thursday)
+    - default: oscars
+      schedule: weekly(sunday|thursday)
+    - default: sundance
+      schedule: weekly(sunday|thursday)
+    - default: separator_chart
+      schedule: weekly(sunday|thursday)
+    - default: letterboxd
+      schedule: weekly(sunday|thursday)
+      template_variables:
+        cache_builders: 7
+        cache_builders_1001_movies: 30
+        cache_builders_edgarwright: 30
+    - default: trakt
+      schedule: weekly(sunday|thursday)
+    - default: universe
+      schedule: weekly(sunday|thursday)
+    - default: franchise
+      schedule: weekly(sunday|thursday)
+      template_variables:
+        collection_section: '200'
+    - file: /config/plexmetamanager/separator_franchise.yml
+      schedule: weekly(sunday|thursday)
+      template_variables:
+        collection_section: '175'
+    - default: streaming
+      schedule: weekly(sunday|thursday)
+      template_variables:
+        originals_only: true
+    - default: actor
+      schedule: weekly(sunday|thursday)
+      template_variables:
+        data:
+          depth: 1
+          limit: 50
+        style: diiivoycolor
+    - default: director
+      schedule: weekly(sunday|thursday)
+      template_variables:
+        data:
+          depth: 1
+          limit: 25
+        style: diiivoycolor
+    - default: director
+      schedule: weekly(sunday|thursday)
+      template_variables:
+        include: David Lynch
+        data:
+          depth: 1
+          limit: 25
+        style: diiivoycolor
+    - default: seasonal
+      schedule:
+      - weekly(sunday|thursday)
+      - monthly(1)
+      template_variables:
+        sort_by: audience_rating.desc
+        name_format: <<key_name>> <<library_translationU>>s In Movies - 4K Remux
+        visible_home: true
+        visible_shared: true
+        visible_library: true
+    - default: decade
+      schedule: weekly(sunday|thursday)
+    - default: imdb
+      schedule: weekly(sunday|thursday)
+    - file: /config/plexmetamanager/Recently_Released/Recently Released Movies 4K Remux.yml
+    - file: /config/plexmetamanager/Recently_Added/Recently Added Movies 4K Remux.yml
+    - file: /config/plexmetamanager/Editions/4K Remux Edition.yml
+      asset_directory: /config/plexmetamanager/assets
+    operations:
+      mass_user_rating_update: reset
+  Animations - Movies:
+    report_path: /config/plexmetamanager/reports/Animations - Movies.yml
+    remove_overlays: false
+    template_variables:
+      sep_style: gray
+      placeholder_imdb_id: tt0103639
+    collection_files:
+    - default: separator_award
+      schedule: weekly(sunday|thursday)
+    - default: oscars
+      schedule: weekly(sunday|thursday)
+    - default: sundance
+      schedule: weekly(sunday|thursday)
+    - default: separator_chart
+      schedule: weekly(sunday|thursday)
+    - default: letterboxd
+      schedule: weekly(sunday|thursday)
+      template_variables:
+        cache_builders: 7
+        cache_builders_1001_movies: 30
+        cache_builders_edgarwright: 30
+    - default: trakt
+      schedule: weekly(sunday|thursday)
+    - default: universe
+      schedule: weekly(sunday|thursday)
+    - default: franchise
+      schedule: weekly(sunday|thursday)
+      template_variables:
+        collection_section: '200'
+    - file: /config/plexmetamanager/separator_franchise.yml
+      schedule: weekly(sunday|thursday)
+      template_variables:
+        collection_section: '175'
+    - default: streaming
+      schedule: weekly(sunday|thursday)
+      template_variables:
+        originals_only: true
+    - default: actor
+      schedule: weekly(sunday|thursday)
+      template_variables:
+        data:
+          depth: 1
+          limit: 50
+        style: diiivoycolor
+    - default: director
+      schedule: weekly(sunday|thursday)
+      template_variables:
+        data:
+          depth: 1
+          limit: 25
+        style: diiivoycolor
+    - default: director
+      schedule: weekly(sunday|thursday)
+      template_variables:
+        include: David Lynch
+        data:
+          depth: 1
+          limit: 25
+        style: diiivoycolor
+    - default: seasonal
+      schedule:
+      - weekly(sunday|thursday)
+      - monthly(1)
+      template_variables:
+        sort_by: audience_rating.desc
+        name_format: <<key_name>> <<library_translationU>>s In Animations - Movies
+        visible_home: true
+        visible_shared: true
+        visible_library: true
+    - default: decade
+      schedule: weekly(sunday|thursday)
+    - default: imdb
+      schedule: weekly(sunday|thursday)
+    - file: /config/plexmetamanager/Recently_Released/Recently Released Animations Movies.yml
+    - file: /config/plexmetamanager/Recently_Added/Recently Added Animations Movies.yml
+      asset_directory: /config/plexmetamanager/assets
+    operations:
+      mass_user_rating_update: reset
+  Series:
+    report_path: /config/plexmetamanager/reports/Series.yml
+    remove_overlays: false
+    template_variables:
+      sep_style: gray
+      placeholder_imdb_id: tt1190634
+    collection_files:
+    - default: separator_chart
+      schedule: weekly(sunday|thursday)
+    - default: tmdb
+      schedule: weekly(sunday|thursday)
+    - default: imdb
+      schedule: weekly(sunday|thursday)
+    - default: trakt
+      schedule: weekly(sunday|thursday)
+    - default: franchise
+      schedule: weekly(sunday|thursday)
+      template_variables:
+        collection_section: '200'
+    - file: /config/plexmetamanager/separator_franchise.yml
+      schedule: weekly(sunday|thursday)
+      template_variables:
+        collection_section: '175'
+    - default: universe
+      schedule: weekly(sunday|thursday)
+    - default: streaming
+      schedule: weekly(sunday|thursday)
+      template_variables:
+        originals_only: true
+    - file: /config/plexmetamanager/Recently_Released/Recently Released Series.yml
+    - file: /config/plexmetamanager/Recently_Added/Recently Added Series.yml
+    - file: /config/plexmetamanager/Seasonal/Seasonal Collections Series.yml
+      schedule:
+      - weekly(sunday|thursday)
+      - monthly(1)
+      asset_directory: /config/plexmetamanager/assets
+    operations:
+      mass_user_rating_update: reset
+  Series - 4K:
+    report_path: /config/plexmetamanager/reports/Series - 4K.yml
+    remove_overlays: false
+    template_variables:
+      sep_style: gray
+      placeholder_imdb_id: tt1190634
+    collection_files:
+    - default: separator_chart
+      schedule: weekly(sunday|thursday)
+    - default: tmdb
+      schedule: weekly(sunday|thursday)
+    - default: imdb
+      schedule: weekly(sunday|thursday)
+    - default: trakt
+      schedule: weekly(sunday|thursday)
+    - default: franchise
+      schedule: weekly(sunday|thursday)
+      template_variables:
+        collection_section: '200'
+    - file: /config/plexmetamanager/separator_franchise.yml
+      schedule: weekly(sunday|thursday)
+      template_variables:
+        collection_section: '175'
+    - default: universe
+      schedule: weekly(sunday|thursday)
+    - default: streaming
+      schedule: weekly(sunday|thursday)
+      template_variables:
+        originals_only: true
+    - file: /config/plexmetamanager/Recently_Released/Recently Released Series 4K.yml
+    - file: /config/plexmetamanager/Recently_Added/Recently Added Series 4K.yml
+    - file: /config/plexmetamanager/Seasonal/Seasonal Collections Series 4K.yml
+      asset_directory: /config/plexmetamanager/assets
+    operations:
+      mass_user_rating_update: reset
+  Series - 4K DV:
+    report_path: /config/plexmetamanager/reports/Series - 4K DV.yml
+    remove_overlays: false
+    template_variables:
+      sep_style: gray
+      placeholder_imdb_id: tt1190634
+    collection_files:
+    - default: separator_chart
+      schedule: weekly(sunday|thursday)
+    - default: tmdb
+      schedule: weekly(sunday|thursday)
+    - default: imdb
+      schedule: weekly(sunday|thursday)
+    - default: trakt
+      schedule: weekly(sunday|thursday)
+    - default: franchise
+      schedule: weekly(sunday|thursday)
+      template_variables:
+        collection_section: '200'
+    - file: /config/plexmetamanager/separator_franchise.yml
+      schedule: weekly(sunday|thursday)
+      template_variables:
+        collection_section: '175'
+    - default: universe
+      schedule: weekly(sunday|thursday)
+    - default: streaming
+      schedule: weekly(sunday|thursday)
+      template_variables:
+        originals_only: true
+    - file: /config/plexmetamanager/Recently_Released/Recently Released Series 4K DV.yml
+    - file: /config/plexmetamanager/Recently_Added/Recently Added Series 4K DV.yml
+    - file: /config/plexmetamanager/Seasonal/Seasonal Collections Series 4K DV.yml
+      schedule:
+      - weekly(sunday|thursday)
+      - monthly(1)
+      asset_directory: /config/plexmetamanager/assets
+    operations:
+      mass_user_rating_update: reset
+  Animations - TV Shows:
+    report_path: /config/plexmetamanager/reports/Animations - TV Shows.yml
+    remove_overlays: false
+    template_variables:
+      sep_style: gray
+      placeholder_imdb_id: tt0088628
+    collection_files:
+    - default: separator_chart
+      schedule: weekly(sunday|thursday)
+    - default: tmdb
+      schedule: weekly(sunday|thursday)
+    - default: imdb
+      schedule: weekly(sunday|thursday)
+    - default: trakt
+      schedule: weekly(sunday|thursday)
+    - default: franchise
+      schedule: weekly(sunday|thursday)
+      template_variables:
+        collection_section: '200'
+    - file: /config/plexmetamanager/separator_franchise.yml
+      schedule: weekly(sunday|thursday)
+      template_variables:
+        collection_section: '175'
+    - default: universe
+      schedule: weekly(sunday|thursday)
+    - default: streaming
+      schedule: weekly(sunday|thursday)
+      template_variables:
+        originals_only: true
+    - file: /config/plexmetamanager/Recently_Released/Recently Released Animations TV Shows.yml
+    - file: /config/plexmetamanager/Recently_Added/Recently Added Animations TV Shows.yml
+    - file: /config/plexmetamanager/Seasonal/Seasonal Collections Animations TV Shows.yml
+      schedule:
+      - weekly(sunday|thursday)
+      - monthly(1)
+      asset_directory: /config/plexmetamanager/assets
+    operations:
+      mass_user_rating_update: reset
+  Anime - Movies:
+    template_variables:
+      sep_style: gray
+      placeholder_imdb_id: tt4489416
+    collection_files:
+    - default: anilist
+      schedule: weekly(sunday|thursday)
+    - default: myanimelist
+      schedule: weekly(sunday|thursday)
+    - file: /config/plexmetamanager/Recently_Released/Recently Released Anime Movies.yml
+    - file: /config/plexmetamanager/Recently_Added/Recently Added Anime Movies.yml
+      asset_directory: /config/plexmetamanager/assets
+    operations:
+      mass_user_rating_update: reset
+  Anime:
+    template_variables:
+      sep_style: gray
+      placeholder_imdb_id: tt12728882
+    collection_files:
+    - default: anilist
+      schedule: weekly(sunday|thursday)
+    - default: myanimelist
+      schedule: weekly(sunday|thursday)
+    - file: /config/plexmetamanager/Recently_Released/Recently Released Anime.yml
+    - file: /config/plexmetamanager/Recently_Added/Recently Added Anime.yml
+      asset_directory: /config/plexmetamanager/assets
+    operations:
+      mass_user_rating_update: reset
+  Sports - Series:
+    collection_files:
+    - file: /config/plexmetamanager/Recently_Released/Recently Released Sports Series.yml
+
+playlist_files:
+- default: playlist
+  template_variables:
+    libraries: Movies, Series, Anime, Anime - Movies, Animations - Movies, Animations - TV Shows
+settings:
+  cache: true
+  cache_expiration: 60
+  asset_folders: true
+  asset_depth: 2
+  create_asset_folders: true
+  prioritize_assets: false
+  dimensional_asset_rename: false
+  download_url_assets: true
+  show_missing_season_assets: false
+  show_missing_episode_assets: false
+  show_asset_not_needed: true
+  sync_mode: append
+  minimum_items: 1
+  default_collection_order:
+  delete_below_minimum: true
+  delete_not_scheduled: false
+  run_again_delay: 2
+  missing_only_released: false
+  only_filter_missing: false
+  show_unmanaged: true
+  show_unconfigured: true
+  show_filtered: false
+  show_options: true
+  show_missing: true
+  show_missing_assets: true
+  save_report: true
+  tvdb_language: eng
+  ignore_ids:
+  ignore_imdb_ids:
+  item_refresh_delay: 0
+  playlist_sync_to_users: all
+  playlist_exclude_users:
+  playlist_report: false
+  custom_repo:
+  run_order:
+  - operations
+  - metadata
+  - collections
+  - overlays
+  overlay_artwork_filetype: jpg
+  overlay_artwork_quality: 90
+  show_unfiltered: false
+  asset_directory: /config/plexmetamanager/assets
+webhooks:                                           # Can be individually specified per library as well
+  error: [REDACTED]
+  run_start: [REDACTED]
+  run_end: [REDACTED]
+  changes: [REDACTED]
+  version: [REDACTED]
+  delete: [REDACTED]
+plex:                                               # Can be individually specified per library as well; REQUIRED for the script to run
+  url: [REDACTED]
+  token: [REDACTED]
+  timeout: 360
+  clean_bundles: true
+  empty_trash: true
+  optimize: false
+  db_cache: 8192                                    # 2048 MB is 2GB which is what I use. Adjust for your system as 2048 MB (2 GB) is probably a good starting point compared to the default Plex value of 40 MB
+  verify_ssl:
+tmdb:                                               # REQUIRED for the script to run
+  apikey: [REDACTED]
+  language: en
+  region: GB                                        # Upper case ISO 3166-1 Code 
+  cache_expiration: 60
+omdb:
+  apikey: [REDACTED]
+  cache_expiration: 60
+mdblist:
+  apikey: [REDACTED]
+  cache_expiration: 60
+########## GENERATED BY TRAKTAUTH ##########
+trakt:
+  client_id: [REDACTED]
+  client_secret: [REDACTED]
+  authorization:
+    access_token: [REDACTED]
+    token_type: Bearer
+    expires_in: 604799
+    refresh_token: [REDACTED]
+    scope: public
+    created_at: 1773590503
+  pin:
+  force_refresh:
+############################################
+
+
+mal:
+  client_id: [REDACTED]
+  client_secret: [REDACTED]
+  authorization:
+    access_token: [REDACTED]
+    token_type: Bearer
+    expires_in: 2678400
+    refresh_token: [REDACTED]
+  localhost_url: [REDACTED]
+  cache_expiration: 60
+tautulli:
+  url: [REDACTED]
+  apikey: [REDACTED]
