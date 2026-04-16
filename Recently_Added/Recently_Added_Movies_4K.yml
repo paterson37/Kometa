@@ -10,5 +10,5 @@ collections:
     visible_library: true
     visible_home: true
     visible_shared: true
-    sort_title: !0_Recently Added In Movies - 4K    
+    sort_title: "!0_Recently Added In Movies - 4K"    
     file_poster: /config/plexmetamanager/assets/Recently_Added.jpg
