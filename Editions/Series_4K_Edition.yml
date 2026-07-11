@@ -1,0 +1,5 @@
+collections:
+  4K-edition:
+    plex_all: true
+    item_edition: 4K
+    build_collection: false
